@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IP Catalog — CoreSilicon Technologies</title>
+<meta name="description" content="Licensable VLSI IP cores from CoreSilicon Technologies: interface controllers, memory controllers, DSP blocks and verification IP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="14" width="4" height="4" fill="#1C8C93"/><rect x="3" y="22" width="4" height="4" fill="#1C8C93"/>
+        <rect x="25" y="14" width="4" height="4" fill="#1C8C93"/><rect x="25" y="22" width="4" height="4" fill="#1C8C93"/>
+        <rect x="14" y="3" width="4" height="4" fill="#1C8C93"/><rect x="22" y="3" width="4" height="4" fill="#1C8C93"/>
+        <rect x="14" y="25" width="4" height="4" fill="#1C8C93"/><rect x="22" y="25" width="4" height="4" fill="#1C8C93"/>
+        <rect x="8" y="8" width="16" height="16" rx="1" fill="#1B4D8C"/>
+      </svg>
+      <span>CoreSilicon Technologies<span class="brand-sub">VLSI IP &amp; engineering training</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#0E1B33" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="about.html" data-page="about.html">About</a></li>
+      <li><a href="ip-catalog.html" data-page="ip-catalog.html">IP catalog</a></li>
+      <li><a href="training.html" data-page="training.html">Training</a></li>
+      <li><a href="updates.html" data-page="updates.html">Updates</a></li>
+      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li><a href="quotation.html" data-page="quotation.html" class="nav-cta">Get a quote</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <span class="kicker">IP catalog</span>
+      <h1>Licensable VLSI IP cores</h1>
+      <p class="lede">Each core ships as synthesizable RTL with a testbench, a datasheet and integration notes. Don't see what you need — the same team takes on custom design work too.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="ip-table-wrap">
+        <table class="ip-table">
+          <thead>
+            <tr>
+              <th>Part code</th>
+              <th>Core</th>
+              <th>Category</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ip-code">CS-I2C-100</td>
+              <td>I2C controller</td>
+              <td>Interface</td>
+              <td>Master/slave I2C controller, standard and fast mode, with register-mapped configuration.</td>
+              <td><span class="status-pill status-proven">Silicon proven</span></td>
+            </tr>
+            <tr>
+              <td class="ip-code">CS-SPI-200</td>
+              <td>SPI controller</td>
+              <td>Interface</td>
+              <td>Configurable SPI master/slave core supporting all four clock/phase modes.</td>
+              <td><span class="status-pill status-proven">Silicon proven</span></td>
+            </tr>
+            <tr>
+              <td class="ip-code">CS-UART-150</td>
+              <td>UART core</td>
+              <td>Interface</td>
+              <td>Programmable-baud UART with FIFO buffering and parity/framing error detection.</td>
+              <td><span class="status-pill status-proven">Silicon proven</span></td>
+            </tr>
+            <tr>
+              <td class="ip-code">CS-SRAM-CTRL-300</td>
+              <td>SRAM controller</td>
+              <td>Memory</td>
+              <td>Single-port SRAM controller with configurable data width and burst access support.</td>
+              <td><span class="status-pill status-progress">RTL complete</span></td>
+            </tr>
+            <tr>
+              <td class="ip-code">CS-FIR-400</td>
+              <td>FIR filter</td>
+              <td>Digital signal</td>
+              <td>Parameterizable FIR filter core (8–256 taps) for audio and sensor front-ends.</td>
+              <td><span class="status-pill status-progress">RTL complete</span></td>
+            </tr>
+            <tr>
+              <td class="ip-code">CS-VIP-JTAG-500</td>
+              <td>JTAG verification IP</td>
+              <td>Verification</td>
+              <td>Reusable JTAG bus functional model and monitor for verifying test-access-port designs.</td>
+              <td><span class="status-pill status-planned">In development</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="catalog-note">Status key — <strong>Silicon proven:</strong> validated on fabricated silicon. <strong>RTL complete:</strong> RTL and testbench finished, pre-tapeout. <strong>In development:</strong> actively being designed.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container two-col">
+      <div>
+        <h2>Licensing a core</h2>
+        <p>Every license includes the RTL source, a UVM or directed testbench, a datasheet covering registers and timing, and a fixed window of integration support from our engineers. We license per-project or per-site depending on how the core will be used.</p>
+        <p>If a core in the catalog needs modification — a different data width, an added mode, a different bus interface — that's scoped as a custom variant rather than a from-scratch design, which usually keeps turnaround short.</p>
+      </div>
+      <div>
+        <ul class="info-list">
+          <li>
+            <span class="ico">▸</span>
+            <div><strong>RTL + testbench</strong><span>Synthesizable Verilog/SystemVerilog with a working verification environment.</span></div>
+          </li>
+          <li>
+            <span class="ico">▸</span>
+            <div><strong>Datasheet</strong><span>Register map, timing diagrams and integration guidance.</span></div>
+          </li>
+          <li>
+            <span class="ico">▸</span>
+            <div><strong>Integration support</strong><span>Direct engineer access for a fixed period after delivery.</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta-row">
+      <div>
+        <h2>Need a specific core or a variant?</h2>
+        <p>Send us your interface, timing and area requirements and we'll come back with a quotation.</p>
+      </div>
+      <a href="quotation.html" class="btn btn-ghost">Request a quotation</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>CoreSilicon Technologies</h4>
+        <p>Licensable VLSI IP cores and hands-on chip design training, built by practicing engineers.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Offerings</h4>
+        <ul class="footer-links">
+          <li><a href="ip-catalog.html">IP catalog</a></li>
+          <li><a href="training.html">Training programs</a></li>
+          <li><a href="quotation.html">Request a quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:enquiries@coresilicon.example">enquiries@coresilicon.example</a></li>
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> CoreSilicon Technologies. All rights reserved.</span>
+      <span>Designed for engineers, by engineers.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="data/updates-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

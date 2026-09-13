@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoreSilicon Technologies — VLSI IP &amp; Chip Design Training</title>
+<meta name="description" content="CoreSilicon Technologies designs licensable VLSI IP cores and trains engineering students in RTL-to-GDSII chip design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="14" width="4" height="4" fill="#1C8C93"/>
+        <rect x="3" y="22" width="4" height="4" fill="#1C8C93"/>
+        <rect x="25" y="14" width="4" height="4" fill="#1C8C93"/>
+        <rect x="25" y="22" width="4" height="4" fill="#1C8C93"/>
+        <rect x="14" y="3" width="4" height="4" fill="#1C8C93"/>
+        <rect x="22" y="3" width="4" height="4" fill="#1C8C93"/>
+        <rect x="14" y="25" width="4" height="4" fill="#1C8C93"/>
+        <rect x="22" y="25" width="4" height="4" fill="#1C8C93"/>
+        <rect x="8" y="8" width="16" height="16" rx="1" fill="#1B4D8C"/>
+      </svg>
+      <span>
+        CoreSilicon Technologies
+        <span class="brand-sub">VLSI IP &amp; engineering training</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#0E1B33" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="about.html" data-page="about.html">About</a></li>
+      <li><a href="ip-catalog.html" data-page="ip-catalog.html">IP catalog</a></li>
+      <li><a href="training.html" data-page="training.html">Training</a></li>
+      <li><a href="updates.html" data-page="updates.html">Updates</a></li>
+      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li><a href="quotation.html" data-page="quotation.html" class="nav-cta">Get a quote</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow-line"><span class="rule"></span>Chip IP &amp; workforce, from one bench</div>
+        <h1>Silicon IP you can license. Engineers you can hire.</h1>
+        <p class="lede">CoreSilicon Technologies designs verified, licensable VLSI IP cores and runs hands-on RTL-to-GDSII training — so your project gets working blocks, and the industry gets job-ready chip designers.</p>
+        <div class="hero-actions">
+          <a href="quotation.html" class="btn btn-primary">Request a quotation</a>
+          <a href="ip-catalog.html" class="btn btn-ghost">Browse the IP catalog</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="num">6+</span><span class="label">IP cores in catalog</span></div>
+          <div class="stat"><span class="num">RTL→GDSII</span><span class="label">Full-flow training</span></div>
+          <div class="stat"><span class="num">1:20</span><span class="label">Mentor-to-student ratio</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of an IP core block with labeled input and output ports">
+          <rect x="150" y="110" width="180" height="200" rx="2" fill="#E7EFF8" stroke="#1B4D8C" stroke-width="2"/>
+          <text x="240" y="200" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" fill="#123761" font-weight="500">CS-CORE</text>
+          <text x="240" y="220" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5B6779">v2.1 · RTL</text>
+
+          <!-- left ports -->
+          <line x1="90" y1="140" x2="150" y2="140" stroke="#1C8C93" stroke-width="2"/>
+          <rect x="80" y="135" width="10" height="10" fill="#1C8C93"/>
+          <text x="70" y="143" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12" fill="#33415C">CLK_IN</text>
+
+          <line x1="90" y1="180" x2="150" y2="180" stroke="#1C8C93" stroke-width="2"/>
+          <rect x="80" y="175" width="10" height="10" fill="#1C8C93"/>
+          <text x="70" y="183" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12" fill="#33415C">RST_N</text>
+
+          <line x1="90" y1="220" x2="150" y2="220" stroke="#1C8C93" stroke-width="2"/>
+          <rect x="80" y="215" width="10" height="10" fill="#1C8C93"/>
+          <text x="70" y="223" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12" fill="#33415C">DATA_IN[7:0]</text>
+
+          <line x1="90" y1="260" x2="150" y2="260" stroke="#1C8C93" stroke-width="2"/>
+          <rect x="80" y="255" width="10" height="10" fill="#1C8C93"/>
+          <text x="70" y="263" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12" fill="#33415C">CFG_ADDR</text>
+
+          <!-- right ports -->
+          <line x1="330" y1="150" x2="390" y2="150" stroke="#1B4D8C" stroke-width="2"/>
+          <rect x="390" y="145" width="10" height="10" fill="#1B4D8C"/>
+          <text x="410" y="153" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#33415C">DATA_OUT[7:0]</text>
+
+          <line x1="330" y1="200" x2="390" y2="200" stroke="#1B4D8C" stroke-width="2"/>
+          <rect x="390" y="195" width="10" height="10" fill="#1B4D8C"/>
+          <text x="410" y="203" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#33415C">IRQ</text>
+
+          <line x1="330" y1="250" x2="390" y2="250" stroke="#1B4D8C" stroke-width="2"/>
+          <rect x="390" y="245" width="10" height="10" fill="#1B4D8C"/>
+          <text x="410" y="253" text-anchor="start" font-family="IBM Plex Mono, monospace" font-size="12" fill="#33415C">ACK</text>
+
+          <!-- flow steps -->
+          <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#5B6779">
+            <circle cx="170" cy="60" r="3" fill="#1C8C93"/>
+            <text x="180" y="64">RTL</text>
+            <line x1="205" y1="60" x2="235" y2="60" stroke="#DCE3EC" stroke-width="1"/>
+            <circle cx="245" cy="60" r="3" fill="#1C8C93"/>
+            <text x="255" y="64">Synthesis</text>
+            <line x1="310" y1="60" x2="340" y2="60" stroke="#DCE3EC" stroke-width="1"/>
+            <circle cx="350" cy="60" r="3" fill="#1B4D8C"/>
+            <text x="360" y="64">Tapeout</text>
+          </g>
+
+          <rect x="150" y="110" width="180" height="200" rx="2" fill="none" stroke="#1B4D8C" stroke-width="2"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="kicker">What we do</span>
+          <h2>Two disciplines, one design bench</h2>
+        </div>
+        <p>Every IP core we license is built the same way we teach it — which is why our training material is drawn from real, taped-out blocks, not textbook examples.</p>
+      </div>
+
+      <div class="block-grid">
+        <div class="block">
+          <span class="tag">01 — IP licensing</span>
+          <h3>Ready-to-integrate IP cores</h3>
+          <p>Interface, memory-controller and digital signal IP delivered as synthesizable RTL with testbenches, documentation and integration support.</p>
+        </div>
+        <div class="block">
+          <span class="tag">02 — Custom design</span>
+          <h3>Design services on request</h3>
+          <p>Need a block that isn't in the catalog? We take on custom RTL design, verification and physical-design engagements for specific project requirements.</p>
+        </div>
+        <div class="block">
+          <span class="tag">03 — Training</span>
+          <h3>RTL-to-GDSII programs</h3>
+          <p>Structured courses and campus batches covering digital design, verification and physical design, taught by engineers who work on production IP.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Latest from CoreSilicon</span>
+          <h2>Recent updates</h2>
+        </div>
+        <a href="updates.html" class="btn btn-ghost">View all updates</a>
+      </div>
+      <div class="timeline" id="updates-list" data-limit="3"></div>
+      <p id="updates-empty">No updates published yet — check back soon.</p>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta-row">
+      <div>
+        <h2>Have a project or a batch to plan?</h2>
+        <p>Tell us what you need — IP licensing, custom design or a training batch — and we'll respond with a scoped quotation.</p>
+      </div>
+      <a href="quotation.html" class="btn btn-ghost">Request a quotation</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>CoreSilicon Technologies</h4>
+        <p>Licensable VLSI IP cores and hands-on chip design training, built by practicing engineers.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Offerings</h4>
+        <ul class="footer-links">
+          <li><a href="ip-catalog.html">IP catalog</a></li>
+          <li><a href="training.html">Training programs</a></li>
+          <li><a href="quotation.html">Request a quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:enquiries@coresilicon.example">enquiries@coresilicon.example</a></li>
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> CoreSilicon Technologies. All rights reserved.</span>
+      <span>Designed for engineers, by engineers.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="data/updates-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

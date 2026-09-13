@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Updates — CoreSilicon Technologies</title>
+<meta name="description" content="Latest news from CoreSilicon Technologies: new IP releases, training batches and workshops.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="14" width="4" height="4" fill="#1C8C93"/><rect x="3" y="22" width="4" height="4" fill="#1C8C93"/>
+        <rect x="25" y="14" width="4" height="4" fill="#1C8C93"/><rect x="25" y="22" width="4" height="4" fill="#1C8C93"/>
+        <rect x="14" y="3" width="4" height="4" fill="#1C8C93"/><rect x="22" y="3" width="4" height="4" fill="#1C8C93"/>
+        <rect x="14" y="25" width="4" height="4" fill="#1C8C93"/><rect x="22" y="25" width="4" height="4" fill="#1C8C93"/>
+        <rect x="8" y="8" width="16" height="16" rx="1" fill="#1B4D8C"/>
+      </svg>
+      <span>CoreSilicon Technologies<span class="brand-sub">VLSI IP &amp; engineering training</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#0E1B33" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="about.html" data-page="about.html">About</a></li>
+      <li><a href="ip-catalog.html" data-page="ip-catalog.html">IP catalog</a></li>
+      <li><a href="training.html" data-page="training.html">Training</a></li>
+      <li><a href="updates.html" data-page="updates.html">Updates</a></li>
+      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li><a href="quotation.html" data-page="quotation.html" class="nav-cta">Get a quote</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <span class="kicker">Updates</span>
+      <h1>News from CoreSilicon</h1>
+      <p class="lede">New IP releases, training batches, workshops and company news, most recent first.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="timeline" id="updates-list"></div>
+      <p id="updates-empty">No updates published yet — check back soon.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>CoreSilicon Technologies</h4>
+        <p>Licensable VLSI IP cores and hands-on chip design training, built by practicing engineers.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Offerings</h4>
+        <ul class="footer-links">
+          <li><a href="ip-catalog.html">IP catalog</a></li>
+          <li><a href="training.html">Training programs</a></li>
+          <li><a href="quotation.html">Request a quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:enquiries@coresilicon.example">enquiries@coresilicon.example</a></li>
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> CoreSilicon Technologies. All rights reserved.</span>
+      <span>Designed for engineers, by engineers.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="data/updates-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

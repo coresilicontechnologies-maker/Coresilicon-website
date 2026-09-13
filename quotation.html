@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Quotation — CoreSilicon Technologies</title>
+<meta name="description" content="Request a quotation from CoreSilicon Technologies for IP licensing, custom VLSI design, or training programs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="14" width="4" height="4" fill="#1C8C93"/><rect x="3" y="22" width="4" height="4" fill="#1C8C93"/>
+        <rect x="25" y="14" width="4" height="4" fill="#1C8C93"/><rect x="25" y="22" width="4" height="4" fill="#1C8C93"/>
+        <rect x="14" y="3" width="4" height="4" fill="#1C8C93"/><rect x="22" y="3" width="4" height="4" fill="#1C8C93"/>
+        <rect x="14" y="25" width="4" height="4" fill="#1C8C93"/><rect x="22" y="25" width="4" height="4" fill="#1C8C93"/>
+        <rect x="8" y="8" width="16" height="16" rx="1" fill="#1B4D8C"/>
+      </svg>
+      <span>CoreSilicon Technologies<span class="brand-sub">VLSI IP &amp; engineering training</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#0E1B33" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="about.html" data-page="about.html">About</a></li>
+      <li><a href="ip-catalog.html" data-page="ip-catalog.html">IP catalog</a></li>
+      <li><a href="training.html" data-page="training.html">Training</a></li>
+      <li><a href="updates.html" data-page="updates.html">Updates</a></li>
+      <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      <li><a href="quotation.html" data-page="quotation.html" class="nav-cta">Get a quote</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <span class="kicker">Request a quotation</span>
+      <h1>Tell us what you need</h1>
+      <p class="lede">Share a few details about your IP, design or training requirement and we'll come back with a scoped quotation — usually within 1–2 business days.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container form-shell">
+
+      <div class="form-panel">
+        <!--
+          FORM SETUP NOTE (for the site owner):
+          This form is wired to submit via Formspree (a free form
+          backend for static sites). To activate it:
+            1. Create a free account at https://formspree.io
+            2. Create a new form and copy its endpoint URL
+            3. Replace the "action" value below (the part that
+               currently reads YOUR_FORM_ID) with your real endpoint
+          Until that's done, submitting this form will open the
+          visitor's email app instead, addressed to the email set
+          in js/main.js and the mailto link in contact.html.
+          Full instructions are in README.md.
+        -->
+        <form id="quotation-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="organization">Company / institution</label>
+              <input type="text" id="organization" name="organization">
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="enquiry-type">Enquiry type</label>
+            <select id="enquiry-type" name="enquiry_type" required>
+              <option value="">Select an option</option>
+              <option value="IP Licensing">IP licensing</option>
+              <option value="Custom IP Design">Custom IP design</option>
+              <option value="Corporate/College Training">Corporate or college training batch</option>
+              <option value="Individual Training">Individual training enquiry</option>
+              <option value="Internship">Internship / project track</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="details">Project or requirement details</label>
+            <textarea id="details" name="details" placeholder="Describe the IP, design task, or training batch you're planning — interface, timeline, group size, or any specs you already have." required></textarea>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="timeline">Expected timeline</label>
+              <input type="text" id="timeline" name="timeline" placeholder="e.g. 6 weeks, or a target start date">
+            </div>
+            <div class="field">
+              <label for="budget">Budget range (optional)</label>
+              <input type="text" id="budget" name="budget" placeholder="Optional">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send enquiry</button>
+          <div id="form-status"></div>
+          <p class="form-note">We'll only use these details to respond to your enquiry.</p>
+        </form>
+      </div>
+
+      <div class="side-info">
+        <h3>What happens next</h3>
+        <p>Every enquiry is reviewed by an engineer, not a sales queue — so the reply you get back addresses your actual requirement, with a realistic timeline and cost estimate.</p>
+        <ul class="info-list">
+          <li>
+            <span class="ico">▸</span>
+            <div><strong>IP licensing</strong><span>We confirm interface/version details and send a license quote with delivery timeline.</span></div>
+          </li>
+          <li>
+            <span class="ico">▸</span>
+            <div><strong>Custom design</strong><span>We scope the block against your spec before quoting design and verification effort.</span></div>
+          </li>
+          <li>
+            <span class="ico">▸</span>
+            <div><strong>Training</strong><span>We confirm group size and level to propose a curriculum and schedule.</span></div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>CoreSilicon Technologies</h4>
+        <p>Licensable VLSI IP cores and hands-on chip design training, built by practicing engineers.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Offerings</h4>
+        <ul class="footer-links">
+          <li><a href="ip-catalog.html">IP catalog</a></li>
+          <li><a href="training.html">Training programs</a></li>
+          <li><a href="quotation.html">Request a quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:enquiries@coresilicon.example">enquiries@coresilicon.example</a></li>
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> CoreSilicon Technologies. All rights reserved.</span>
+      <span>Designed for engineers, by engineers.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="data/updates-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
